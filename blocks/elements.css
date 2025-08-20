@@ -1,0 +1,58 @@
+.elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  column-gap: 17px;
+  row-gap: 21px;
+  justify-content: center;
+  padding-bottom: 17px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  max-height: 361px;
+}
+
+.element__legenda {
+  background-color: white;
+  border: 1.5px solid #000;
+  border-radius: 0 0 10px 10px;
+}
+
+.element__image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* mantém quadrado responsivo */
+  border: 1.5px solid #000;
+  border-radius: 10px 10px 0 0;
+}
+
+.element__legenda_texto {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 31px;
+  color: black;
+  align-self: center;
+  justify-content: space-between;
+  margin: 0 15px 0 21px;
+}
+
+.element__legenda-like {
+  width: 21px;
+  height: 19px;
+  align-self: center;
+  margin-left: 18px;
+}
+
+.element__texto {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
+  height: 30px;
+}

@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  min-height: 120px;
+  align-items: center;
+}
+
+/* .header {
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  display: flex;
+  flex-direction: column;
+  max-width: 880px;
+  margin: 0 auto 0;
+  padding-top: 45px;
+  align-items: flex-start;
+} */
+
+.header__logo {
+  width: 173px;
+  height: 33px;
+}
