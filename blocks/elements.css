@@ -13,12 +13,6 @@
   max-height: 361px;
 }
 
-.element__legenda {
-  background-color: white;
-  border: 1.5px solid #000;
-  border-radius: 0 0 10px 10px;
-}
-
 .element__image {
   width: 100%;
   object-fit: cover;
@@ -27,34 +21,39 @@
   border-radius: 10px 10px 0 0;
 }
 
-.element__legenda_texto {
+.element__description {
   display: flex;
   padding-top: 25px;
   padding-bottom: 31px;
   color: black;
   align-self: center;
   justify-content: space-between;
-  margin: 0 15px 0 21px;
+  background-color: white;
+  border: 1.5px solid #000;
+  border-radius: 0 0 10px 10px;
+  max-width: 100%;
+  width: 100%;
 }
 
-.element__legenda-like {
+.element__like-button {
   width: 21px;
   height: 19px;
   align-self: center;
-  margin-left: 18px;
+  margin-left: 15px;
   cursor: pointer;
+  margin-right: 18px;
 }
 
-.element__legenda-like:hover {
+.element__like-button:hover {
   opacity: 0.5;
 }
 
-.element__legenda-like_active {
+.element__like-button:active {
   /* background: url("../images/like_button_black.png") center no-repeat;
   background-size: contain; */
 }
 
-.element__texto {
+.element__title {
   margin: 0;
   font-family: "Inter", sans-serif;
   font-weight: 900;
@@ -65,4 +64,5 @@
   overflow: hidden;
   max-width: 200px;
   height: 30px;
+  margin-left: 21px;
 }

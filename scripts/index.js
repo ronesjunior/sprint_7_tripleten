@@ -1,7 +1,7 @@
 // Abrir popup para editar nome e sobre mim
 
 const popup = document.querySelector(".popup");
-const editBotao = document.querySelector(".info__image-botao");
+const editBotao = document.querySelector(".profile__image-button");
 const fecharBotao = document.querySelector(".popup__fechar-botao");
 
 function abrirPopup() {
@@ -28,13 +28,13 @@ function AlterarPerfilFormSubmit(evt) {
   let valorNome = entradaNome.value;
   let valorSobre = entradaSobre.value;
 
-  let perfilNome = document.querySelector(".info__jacques-costeau");
-  let perfilSobre = document.querySelector(".info__explorador");
+  let perfilNome = document.querySelector(".profile__title");
+  let perfilSobre = document.querySelector(".profile__description");
 
   perfilNome.textContent = valorNome;
   perfilSobre.textContent = valorSobre;
 
-  closePopup();
+  fecharPopup();
 }
 
 formElement.addEventListener("submit", AlterarPerfilFormSubmit); // Conecta a função ao formulário
