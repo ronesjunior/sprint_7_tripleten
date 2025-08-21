@@ -24,7 +24,7 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 }
 
-.popup__title {
+.popup__titlo {
   font-size: 24px;
   font-weight: 900;
   line-height: 29px;
@@ -32,7 +32,7 @@
   color: #000000;
 }
 
-.popup__close-button {
+.popup__fechar-botao {
   position: absolute;
   top: -40px;
   right: -40px;
@@ -48,7 +48,7 @@
   transition: opacity 0.3s ease;
 }
 
-.popup__close-button:hover {
+.popup__fechar-botao:hover {
   opacity: 0.6;
 }
 
@@ -59,7 +59,7 @@ input {
   box-sizing: border-box;
 }
 
-.popup__input {
+.popup__entrada {
   width: 100%;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -71,24 +71,27 @@ input {
   background-color: transparent;
   outline: none;
   font-family: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.popup__input:focus {
+.popup__entrada:focus {
   border-bottom-color: rgba(0, 0, 0, 0.5);
 }
 
-.popup__input::placeholder {
+.popup__entrada::placeholder {
   color: #c4c4c4;
   font-size: 14px;
   line-height: 17px;
 }
 
-.popup__input:last-of-type {
+.popup__entrada:last-of-type {
   margin-bottom: 0;
 }
 
 /* Botão Salvar */
-.popup__save-button {
+.popup__salvar-botao {
   margin-top: 48px;
   width: 358px;
   height: 50.15px;
@@ -101,7 +104,7 @@ input {
   transition: background-color 0.3s ease;
 }
 
-.popup__save-button:hover {
+.popup__salvar-botao:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -117,7 +120,7 @@ input {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
   }
 
-  .popup__close-button {
+  .popup__fechar-botao {
     position: absolute;
     top: -40px;
     right: 0px;
@@ -134,7 +137,7 @@ input {
   }
 
   /* Botão Salvar */
-  .popup__save-button {
+  .popup__salvar-botao {
     margin-top: 48px;
     width: 100%;
     height: 50.15px;
@@ -147,7 +150,7 @@ input {
     transition: background-color 0.3s ease;
   }
 
-  .popup__save-button:hover {
+  .popup__salvar-botao:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
 }

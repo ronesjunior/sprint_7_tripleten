@@ -42,6 +42,16 @@
   height: 19px;
   align-self: center;
   margin-left: 18px;
+  cursor: pointer;
+}
+
+.element__legenda-like:hover {
+  opacity: 0.5;
+}
+
+.element__legenda-like_active {
+  /* background: url("../images/like_button_black.png") center no-repeat;
+  background-size: contain; */
 }
 
 .element__texto {
