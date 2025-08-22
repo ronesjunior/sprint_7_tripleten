@@ -36,22 +36,29 @@
 }
 
 .element__like-button {
-  width: 21px;
-  height: 19px;
+  border: none;
+  background: transparent;
+  margin-right: 18px;
+  padding: 0;
   align-self: center;
   margin-left: 15px;
-  cursor: pointer;
-  margin-right: 18px;
 }
 
-.element__like-button:hover {
+.element__like-icon {
+  width: 22px;
+  height: 19px;
+  display: block;
+  cursor: pointer;
+}
+
+.element__like-icon:hover {
   opacity: 0.5;
 }
 
-.element__like-button:active {
-  /* background: url("../images/like_button_black.png") center no-repeat;
-  background-size: contain; */
-}
+/* .element__like-icon_active {
+  background: url("../images/like_button_black.png") center no-repeat;
+  background-size: contain;
+} */
 
 .element__title {
   margin: 0;

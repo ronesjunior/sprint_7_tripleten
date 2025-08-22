@@ -15,6 +15,7 @@ function fecharPopup() {
 editBotao.addEventListener("click", abrirPopup);
 fecharBotao.addEventListener("click", fecharPopup);
 
+///////////////////////////////////////////////////////////////////////////
 // Alterar nome e sobre mim quando clicar no botão salvar do popup
 
 let formElement = document.querySelector("#popup__form");
@@ -35,6 +36,23 @@ function AlterarPerfilFormSubmit(evt) {
   perfilSobre.textContent = valorSobre;
 
   fecharPopup();
+
+  // let entradaNome = document.querySelector("#nome").value;
+  // let entradaSobre = document.querySelector("#sobre").value;
+
+  // document.querySelector(".profile__title").textContent = entradaNome;
+  // document.querySelector(".profile__description").textContent = entradaSobre;
+
+  // fecharPopup();
 }
 
 formElement.addEventListener("submit", AlterarPerfilFormSubmit); // Conecta a função ao formulário
+
+///////////////////////////////////////////////////////////////////////////
+// Botão "like" da section "element" mudar a cor para black quando clicado
+
+// const likeButton = document.querySelector(".element__like-icon");
+
+// likeButton.addEventListener("click", function () {
+//   this.classList.toggle("element__like-icon_active");
+// });
