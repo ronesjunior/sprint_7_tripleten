@@ -59,6 +59,9 @@
         </section>
         <section class="elements">
           <div class="element">
+             <button class="element__delete-button" type="button" aria-label="Excluir cartão">
+              <img src="./images/lixeira.png" alt="botão lixeira" class="element__lixeira-icon">
+             </button>
             <img class="element__image" src="./images/vale_yosemite.jpg" />
               <div class="element__description">
                 <h2 class="element__title">Vale de Yosemite</h2>
@@ -68,6 +71,9 @@
               </div>
           </div>
           <div class="element">
+            <button class="element__delete-button" type="button" aria-label="Excluir cartão">
+              <img src="./images/lixeira.png" alt="botão lixeira" class="element__lixeira-icon">
+            </button>
             <img class="element__image" src="./images/lago_louise.jpg" />
               <div class="element__description">
                 <h1 class="element__title">Lago Louise</h1>
@@ -77,6 +83,9 @@
               </div>
           </div>
           <div class="element">
+            <button class="element__delete-button" type="button" aria-label="Excluir cartão">
+              <img src="./images/lixeira.png" alt="botão lixeira" class="element__lixeira-icon">
+            </button>
             <img class="element__image" src="./images/montanhas_care.jpg" />
               <div class="element__description">
                 <h1 class="element__title">Montanhas Care</h1>
@@ -86,6 +95,9 @@
               </div>
           </div>
           <div class="element">
+            <button class="element__delete-button" type="button" aria-label="Excluir cartão">
+              <img src="./images/lixeira.png" alt="botão lixeira" class="element__lixeira-icon">
+            </button>
             <img class="element__image" src="./images/latemar.jpg" />
               <div class="element__description">
                 <h1 class="element__title">Latemar</h1>
@@ -95,6 +107,9 @@
               </div>
           </div>
           <div class="element">
+            <button class="element__delete-button" type="button" aria-label="Excluir cartão">
+               <img src="./images/lixeira.png" alt="botão lixeira" class="element__lixeira-icon">
+            </button>
             <img class="element__image" src="./images/parque_nacional.jpg" />
               <div class="element__description">
                 <h1 class="element__title">Parque Nacional da Vanoise</h1>
@@ -104,6 +119,9 @@
               </div>
           </div>
           <div class="element">
+            <button class="element__delete-button" type="button" aria-label="Excluir cartão">
+              <img src="./images/lixeira.png" alt="botão lixeira" class="element__lixeira-icon">
+            </button>
             <img class="element__image" src="./images/lago_braies.jpg" />
               <div class="element__description">
                 <h1 class="element__title">Lago di Braies</h1>
@@ -115,7 +133,7 @@
         </section>
       </main>
 
-      <!-- Bloco Pop-up -->
+      <!-- Bloco Pop-up para editar perfil -->
       <div id="popup" class="popup">
         <div class="popup__container">
           <button type="button" class="popup__fechar-botao"></button>
@@ -127,6 +145,19 @@
           </form>
         </div>
       </div>
+
+      <!-- Bloco Pop-up para adicionar card -->
+        <div id="popup-add-card" class="popup-add-card">
+          <div class="popup-add-card__container">
+            <button type="button" class="popup-add-card__fechar-botao"></button>
+            <h2 class="popup-add-card__titulo">Novo local</h2>
+            <form id="popup-add-card__form">
+              <input class='popup-add-card__entrada' type="text" id="titulo" name="titulo" placeholder="Título" required />
+              <input class='popup-add-card__entrada' type="url" id='link' name="link" placeholder="Link de imagem" required />
+              <button type="submit" class="popup-add-card__criar-botao">Criar</button>
+            </form>
+          </div>
+        </div>
 
       <footer class="footer">
         <p class="footer__copyright">&copy; 2025. Around The U.S.</p>

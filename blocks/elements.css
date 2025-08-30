@@ -8,9 +8,7 @@
 }
 
 .element {
-  display: flex;
-  flex-direction: column;
-  max-height: 361px;
+  position: relative;
 }
 
 .element__image {
@@ -55,10 +53,10 @@
   opacity: 0.5;
 }
 
-/* .element__like-icon_active {
+.element__like-icon_active {
   background: url("../images/like_button_black.png") center no-repeat;
   background-size: contain;
-} */
+}
 
 .element__title {
   margin: 0;
@@ -72,4 +70,26 @@
   max-width: 200px;
   height: 30px;
   margin-left: 21px;
+}
+
+.element__delete-button {
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: opacity 0.2s ease;
+}
+
+.element__lixeira-icon {
+  width: 18px;
+  height: 19px;
+  display: block;
+  cursor: pointer;
+}
+
+.element__lixeira-icon:hover {
+  opacity: 0.6;
 }
